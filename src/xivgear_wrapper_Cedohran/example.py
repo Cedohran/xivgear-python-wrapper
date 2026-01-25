@@ -1,14 +1,15 @@
-from xivapi.xiv_api import XivAPI
-from xivgear.xiv_gear_api import XIVGearAPI
-
-
 ##############
 ### Disclaimer
 ### all this data is subject to change due to changes to game data, xivgear API or xivapi
 ##############
 
 
+from xivgear_wrapper_Cedohran.xivapi.xiv_api import XivAPI
+from xivgear_wrapper_Cedohran.xivgear.xiv_gear_api import XIVGearAPI
+
+
 # Here we want to get a list of the names of the gear pieces in our gear set
+
 def get_item_names_with_set_id():
     # initiate xivgear API and xivapi
     gear_api = XIVGearAPI()

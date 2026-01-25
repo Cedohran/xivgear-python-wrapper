@@ -1,8 +1,8 @@
 from typing import Dict, List
 import requests
 
-from xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
-from xivgear.xiv_gear_set import XIVGearSet
+from xivgear_wrapper_Cedohran.xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
+from xivgear_wrapper_Cedohran.xivgear.xiv_gear_set import XIVGearSet
 
 class XIVGearAPI:
     def __init__(self):
