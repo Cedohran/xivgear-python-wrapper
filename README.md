@@ -1,5 +1,5 @@
 # xivgear-python-wrapper
-A python wrapper for the xivgear API.
+A python wrapper for the xivgear API, with additional info provided by xivapi.
 
 Relevant docs:
 
