@@ -1,5 +1,5 @@
 from typing import List
-from data_structures.xiv_gear_item import XIVGearItem, XIVGearSlot
+from xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
 
 
 class XIVGearSet():
