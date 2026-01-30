@@ -3,9 +3,8 @@
 ### all this data is subject to change due to changes to game data, xivgear API or xivapi
 ##############
 
-
-from xivapi.xiv_api import XivAPI
-from xivgear.xiv_gear_api import XIVGearAPI
+from xivgear_wrapper_Cedohran.xivapi.xiv_api import XivAPI
+from xivgear_wrapper_Cedohran.xivgear.xiv_gear_api import XIVGearAPI
 
 
 
