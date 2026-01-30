@@ -1,9 +1,6 @@
-from ctypes import sizeof
 from typing import Dict, List
 import requests
 
-from xivgear_wrapper_Cedohran.xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
-from xivgear_wrapper_Cedohran.xivgear.xiv_gear_set import XIVGearSet
 
 class XivAPI:
     def __init__(self):

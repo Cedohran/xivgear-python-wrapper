@@ -1,5 +1,5 @@
 from typing import List
-from xivgear_wrapper_Cedohran.xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
+from xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
 
 
 class XIVGearSet():
