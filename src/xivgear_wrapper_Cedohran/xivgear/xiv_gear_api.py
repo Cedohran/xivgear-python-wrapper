@@ -1,8 +1,8 @@
 from typing import Dict, List
 import requests
 
-from xivgear_wrapper_Cedohran.xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
-from xivgear_wrapper_Cedohran.xivgear.xiv_gear_set import XIVGearSet
+from xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
+from xivgear.xiv_gear_set import XIVGearSet
 
 class XIVGearAPI:
     def __init__(self):
@@ -32,7 +32,11 @@ class XIVGearAPI:
             raise Exception(f"Error getting gearset data: {response}")
         
         # all the sets contained in the sheet
-        sheet_sets: List = sheet_json["sets"]
+        try:
+            sheet_sets: List = sheet_json["sets"]
+        except KeyError:
+            # maybe there is only one set in the sheet
+            sheet_sets = [sheet_json]
 
         # read all the gearsets
         for gearset in sheet_sets:
@@ -79,7 +83,11 @@ class XIVGearAPI:
             raise Exception(f"Error getting gearset data: {response}")
         
         # all the sets contained in the sheet
-        sheet_sets: List = sheet_json["sets"]
+        try:
+            sheet_sets: List = sheet_json["sets"]
+        except KeyError:
+            # maybe there is only one set in the sheet
+            sheet_sets = [sheet_json]
 
         # find the wanted set
         for gearset in sheet_sets:
