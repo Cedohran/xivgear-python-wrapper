@@ -10,7 +10,7 @@ https://v2.xivapi.com/docs/welcome/
 ## How to use
 Install using pip:
 ```
-pip install xivgear-wrapper-Cedohran==0.0.1
+pip install xivgear-wrapper-Cedohran
 ```
 
 Examples in [example.py](https://github.com/Cedohran/xivgear-python-wrapper/blob/main/src/xivgear_wrapper_Cedohran/example.py).
