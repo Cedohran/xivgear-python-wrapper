@@ -4,17 +4,12 @@
 ##############
 
 
+from xivapi.xiv_api import XivAPI
+from xivgear.xiv_gear_api import XIVGearAPI
 
 
 
 # Here we want to get a list of the names of the gear pieces in our gear set
-
-
-
-
-from xivapi.xiv_api import XivAPI
-from xivgear.xiv_gear_api import XIVGearAPI
-
 
 def get_item_names_with_set_id():
     # initiate xivgear API and xivapi

@@ -4,6 +4,7 @@ import requests
 from xivgear.xiv_gear_item import XIVGearItem, XIVGearSlot
 from xivgear.xiv_gear_set import XIVGearSet
 
+
 class XIVGearAPI:
     def __init__(self):
         self.base_url = "https://api.xivgear.app/shortlink/"
@@ -11,6 +12,7 @@ class XIVGearAPI:
         response = requests.get("https://xivgear.app/docs/")
         if response.status_code != 200:
             raise Exception(f"Could not connect to xivgear API")
+
 
     def get_all_gearsets(self, sheetid: str) -> List[XIVGearSet]:
         """
@@ -60,6 +62,7 @@ class XIVGearAPI:
             gearsets.append(new_set)
 
         return gearsets
+
 
     def get_gearset(self, sheetid: str, set_name: str) -> XIVGearSet:
         """
